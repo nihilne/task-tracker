@@ -50,7 +50,13 @@ def get_tasks():
     conn = get_db()
     cur = conn.cursor()
     cur.execute(
-        "SELECT * FROM tasks ORDER BY completed_at IS NULL DESC, created_at DESC"
+        """
+        SELECT *
+        FROM tasks
+        ORDER BY 
+            completed_at IS NULL DESC,
+            created_at DESC
+        """
     )
 
     tasks = [dict(row) for row in cur.fetchall()]
