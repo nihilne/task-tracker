@@ -2,10 +2,19 @@ import os
 import sqlite3
 
 from datetime import datetime
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://enitoxy.github.io", "http://localhost"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 DB_PATH = os.environ.get("DB_PATH", "./db/tasks.db")
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
