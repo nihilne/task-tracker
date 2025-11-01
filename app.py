@@ -200,3 +200,6 @@ async def complete_task(task_id: int):
     conn.commit()
     conn.close()
     return {"status": "success"}
+
+
+db_init()
