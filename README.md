@@ -9,7 +9,10 @@ Follow these steps to get started ASAP:
 1. Clone this repository
 2. Switch to the directory you cloned to (if not already in it)
 3. Run `pip install -r requirements.txt` to install all needed packages
-4. Run `python app.py` using Python >= 3.12
+4. Run `pythonw main.py` using Python >= 3.12
+5. Alternatively, run `python main.py` to open a CLI
+
+If ran with pythonw (aka. in the background), you can exit using the system tray menu (right-click on the tt icon).
 
 Visit [insert github pages url here] to access the task-tracker frontend. The webpage will attempt to communicate with localhost:8080 to access the API and its local database that is created automatically when first running `app.py`.
 
