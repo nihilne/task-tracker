@@ -14,7 +14,7 @@ Follow these steps to get started ASAP:
 
 If ran with pythonw (aka. in the background), you can exit using the system tray menu (right-click on the tt icon).
 
-Visit [https://enitoxy.github.io/task-tracker](https://enitoxy.github.io/task-tracker/) to access the task-tracker frontend. The webpage will attempt to communicate with localhost:8080 to access the API and its local database that is created automatically when first running `app.py`.
+Visit [https://nihilne.github.io/task-tracker](https://enitoxy.github.io/task-tracker/) to access the task-tracker frontend. The webpage will attempt to communicate with localhost:8080 to access the API and its local database that is created automatically when first running `app.py`.
 
 Alternatively, you can host the frontend on your own, for which you can find all the code in the `gh-pages` branch.
 
